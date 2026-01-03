@@ -1,4 +1,5 @@
+let response= require('../services/fact.service')
 let =fetchfact=(req,res)=>{
-  res.json({"msg":"cat is an animal"})
+  res.json(response());
 }
 module.exports=fetchfact;
