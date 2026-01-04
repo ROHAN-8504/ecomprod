@@ -10,7 +10,8 @@ const storeallproducts=async (req,res)=>{
 }
 
 const deletepro=async(req,res)=>{
-  await productservices.deletetheproduct(req.params)
+
+  await productservices.deletetheproduct(req.params.id)
   res.json({"msg":"product is deleted succesfully"})
 }
 module.exports={getfinalproducts,storeallproducts,deletepro}
