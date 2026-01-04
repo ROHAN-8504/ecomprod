@@ -16,4 +16,4 @@ const deleteproducts=(id)=>{
   return products.findByIdAndDelete(id)
 }
 
-module.exports={fetchproducts,createproducts,deleteproducts}
+module.exports={fetchproducts,createproducts,deleteproducts,updateproducts}

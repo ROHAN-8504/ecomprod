@@ -14,4 +14,12 @@ const deletepro=async(req,res)=>{
   await productservices.deletetheproduct(req.params.id)
   res.json({"msg":"product is deleted succesfully"})
 }
-module.exports={getfinalproducts,storeallproducts,deletepro}
+
+const updatepro=async(req,res)=>{
+
+  await productservices.updatetheproducts(req.params.id,req.body)
+  res.json({"msg":"product is updated succesfully"})
+}
+
+
+module.exports={getfinalproducts,storeallproducts,deletepro,updatepro}

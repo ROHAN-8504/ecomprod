@@ -12,4 +12,8 @@ let deletetheproduct=async(id)=>{
    return await finalproducts.deleteproducts(id)
 }
 
-module.exports={getallproducts,createallproducts,deletetheproduct}
+let updatetheproducts=async (id,payload) =>{
+    return await   finalproducts.updateproducts(id,payload)
+}
+
+module.exports={getallproducts,createallproducts,deletetheproduct,updatetheproducts}
