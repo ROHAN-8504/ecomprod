@@ -8,4 +8,8 @@ let createallproducts=async ({title,price,image})=>{
     return await finalproducts.createproducts({title,price,image});
 }
 
-module.exports={getallproducts,createallproducts}
+let deletetheproduct=async({id})=>{
+   return await finalproducts.deleteproducts({id})
+}
+
+module.exports={getallproducts,createallproducts,deletetheproduct}

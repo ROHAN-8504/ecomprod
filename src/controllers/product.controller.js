@@ -9,4 +9,8 @@ const storeallproducts=async (req,res)=>{
   res.status(201).json({"msg":"products stored succesfully"})
 }
 
-module.exports={getfinalproducts,storeallproducts}
+const deletepro=async(req,res)=>{
+  await productservices.deletetheproduct(req.params)
+  res.json({"msg":"product is deleted succesfully"})
+}
+module.exports={getfinalproducts,storeallproducts,deletepro}
